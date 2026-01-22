@@ -5,7 +5,7 @@ from mpl_toolkits.axes_grid1.inset_locator import zoomed_inset_axes
 from mpl_toolkits.axes_grid1.inset_locator import mark_inset
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
-from general import * 
+from .general import * 
 
 # FUNCTION: Scatter Plot, Average Hs-Hk curve, Zoom of the region of interest (where the slope is -1) 
 def Hs_Hk_scatter_plot(ax, Hs, Hk, N, Hs_avg, Hk_avg, Hs_area_best_slope, Hk_area_best_slope):

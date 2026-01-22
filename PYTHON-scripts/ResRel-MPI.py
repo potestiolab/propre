@@ -55,33 +55,12 @@ logging.captureWarnings(True)
 
 start_code = datetime.now()
 
+# 1.2 Importing user-libraries 
+from lib.inp_out import * 
+from lib.general import *
+from lib.check_errors import * 
 
-# 1.2 Finding the path of the  main folder (usually "PrOpRe") after searching for 'PYTHON-scripts' folder. 
-#     Then, add /lib in order to find our libraries. 
-
-desired_folder_name = "PYTHON-scripts"
-current_directory = os.getcwd()
-desired_path = None
-
-while True:
-    if desired_folder_name in os.listdir(current_directory):
-        desired_path = current_directory
-        break
-    elif current_directory == os.path.dirname(current_directory):
-        print("ERROR. 'PYTHON-script' folder has not been found. Please, check it out...\n")
-        quit()
-    else:
-        current_directory = os.path.dirname(current_directory)
-
-python_modules_path = desired_path + "/lib"
-sys.path.append(python_modules_path)
-
-# 1.3 Importing user-libraries 
-from inp_out import * 
-from general import *
-from check_errors import * 
-
-# 1.4 Input Arguments -------------------------------------------------------------------------------------------------------------------
+# 1.3 Input Arguments -------------------------------------------------------------------------------------------------------------------
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, add_help=False) 
 
 group_in=parser.add_argument_group("Required Arguments") 

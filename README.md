@@ -105,7 +105,8 @@ In this section, we present the tool for identifying the optimal number of sites
 <br/>
 
 # 3 - Usage 
-The typical usage of the program consists in a call to `remove_H_atoms.py`, `ResRel-MPI.py` and `Hs-Hk-slope.py` in succession by using Python3: 
+The typical usage of the program consists in a call to `remove_H_atoms.py`, `ResRel-MPI.py` and `Hs-Hk-slope.py` in succession by using Python3. The code has been organized as a package, though still not published on PyPi, so you can call the scripts from anywhere in your project folder.
+The three main scripts are the following: 
 
 <div align ="justify">
 <ul>

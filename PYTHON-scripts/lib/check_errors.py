@@ -4,8 +4,8 @@ import argparse
 
 from multiprocessing import cpu_count
 
-from inp_out import *
-from general import * 
+from .inp_out import *
+from .general import * 
 
 
 # Function: it checks if empty rows are present in a file in 'Hs-Hk-Nsites.py' program 

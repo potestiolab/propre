@@ -1,7 +1,7 @@
 import sys 
 import os
 
-from general import * 
+from .general import * 
 
 
     
